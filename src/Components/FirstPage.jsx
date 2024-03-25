@@ -1,4 +1,4 @@
-import avatarjessica from "../assets/avatar-jessica.jpeg";
+import myself from "../assets/pic1b.jpg";
 import "../Styles/FirstPage.scss";
 
 function FirstPage() {
@@ -7,16 +7,16 @@ function FirstPage() {
   
       <div className="pagediv">
     
-        <img src={avatarjessica} alt="john" />
+        <img src={myself} alt="john" />
 
         <div className="para">
-          <p> Jessica Randall </p>
-          <p> London,  United Kingdom</p>
+          <p> Olubukola Adebiyi </p>
+          <p> Oyo,  Nigeria</p>
           <p>"Front-end developer and avid reader."</p>
         </div>
         <div className="buttoncontainer">
             <button>GitHub</button>
-            <button>Frontend Mentor</button>
+            <button>Upwork</button>
             <button>LinkedIn</button>
             <button>Twitter</button>
             <button>Instagram</button>
