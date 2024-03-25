@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$DarkGrey: hsl(0, 0%, 12%);
+$OffBlack: hsl(0, 0%, 8%);
+
+.pagediv {
+    background-color: $DarkGrey;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    height: 800px;
+    min-width: 375px;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    flex-direction: column;
+    
+    img {
+        position: relative;
+        width: 160px; //  width
+        height: 160px; //  height
+        border-radius: 50%; //circular
+        overflow: hidden;
+        object-fit: cover; // aspect ratio
+    }
+
+    p:nth-child(1) {
+        font-size: 25px;
+        color: $White;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+
+    p:nth-child(2) {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $green;
+        text-align: center;
+        margin-top: -20px; 
+    }
+
+    p:nth-child(3) {
+        font-size: 15px;
+        color: $White;
+        font-family: Inter;
+        text-align: center;
+        font-style: normal;
+    }
+
+    .buttoncontainer {
+        display: inline-grid;
+        width: auto;
+
+    }
+
+    button {
+        margin: 15px;
+        width: 300px;
+        height: 50px;
+        background-color: $Grey;
+        color: $White;
+    }
+
+    .buttoncontainer :hover {
+        background-color: $green;
+        color: $OffBlack;
+    }
+}
+@media screen and (max-width:475px) {
+
+        .pagediv{
+            border-radius: 3%;
+            margin-top: 55px;         
+            height: 650px;
+            min-width: 75px;
+         
+        }
+        
+            .pagediv img {
+                position: relative;
+                width: 150px; //  width
+                height: 150px; //  height
+                border-radius: 50%; //  circular
+                overflow: hidden;
+                object-fit: cover; // Maintain aspect ratio
+            }    
+                 
+            .buttoncontainer button {
+                justify-content: center;
+                align-items: start;
+                align-self: center;
+                align-content: center;
+                margin: 5px;
+                width: 230px;
+                height: 50px;
+            }
+
+            p:nth-child(1) {
+                font-size: 20px;
+            }
+        
+        
+            p:nth-child(2) {
+                font-size: 12px;
+            }
+        
+            p:nth-child(3) {
+                font-size: 12px;
+
+            }
+        }
+        
+
